@@ -32,6 +32,29 @@ window.addEventListener('click', (e) => {
   }
 });
 
+// dark mode
+
+document.addEventListener('DOMContentLoaded', () => {
+  const darkToggle = document.querySelector('#darkToggle');
+  const html = document.documentElement;
+
+  // Cek localStorage
+  if (localStorage.getItem('theme') === 'dark') {
+    html.classList.add('dark');
+    darkToggle.checked = true;
+  }
+
+  darkToggle.addEventListener('change', () => {
+    if (darkToggle.checked) {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      html.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+});
+
 // send email
 document
   .getElementById('contactForm')

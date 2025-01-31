@@ -32,43 +32,70 @@
             <!-- nav menu -->
             <nav
               id="nav-menu"
-              class="hidden bg-white max-w-[250px] w-full rounded-lg shadow-lg absolute right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none"
+              class="hidden bg-white dark:bg-dark lg:dark:bg-transparent max-w-[250px] w-full rounded-lg shadow-lg dark:shadow-slate-800 absolute right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="group-hover:text-primary px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
+                    class="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="group-hover:text-primary px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
+                    class="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="group-hover:text-primary px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
+                    class="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
                     >Portofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#experience"
-                    class="group-hover:text-primary px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
+                    class="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
                     >Experience</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="group-hover:text-primary px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
+                    class="group-hover:text-primary dark:text-white px-8 py-4 h-full flex rounded-lg transition duration-300 ease-in-out"
                     >Contact</a
                   >
+                </li>
+                <li class="flex lg:items-center pl-8 mt-2 lg:pt-2 pb-4">
+                  <div class="flex">
+                    <span
+                      class="mr-2 text-sm text-slate-500 dark:text-slate-200"
+                      >Light</span
+                    >
+                    <input
+                      type="checkbox"
+                      class="hidden"
+                      id="darkToggle"
+                      checked
+                    />
+                    <label for="darkToggle">
+                      <div
+                        class="flex items-center h-5 w-9 bg-slate-500 rounded-full relative cursor-pointer p-1"
+                      >
+                        <div
+                          class="toggle-circle rounded-full w-4 h-4 bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span
+                      class="ml-2 text-sm text-slate-500 dark:text-slate-200"
+                      >Dark</span
+                    >
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -78,17 +105,23 @@
     </header>
     <!-- Header End -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-10 md:pt-36 md:pb-24">
+    <section id="home" class="pt-10 md:pt-36 md:pb-24 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2 order-2 lg:order-1">
-            <h1 class="block text-4xl font-bold text-dark mb-2 lg:text-5xl">
+            <h1
+              class="block text-4xl font-bold text-dark dark:text-white mb-2 lg:text-5xl"
+            >
               Raafi Nur Adzani
             </h1>
-            <h2 class="text-secondary text-lg font-semibold lg:text-2xl mb-2">
+            <h2
+              class="text-secondary dark:text-slate-300 text-lg font-semibold lg:text-2xl mb-2"
+            >
               Fullstack Web Developer
             </h2>
-            <p class="font-medium text-base mb-5 text-secondary">
+            <p
+              class="font-medium text-base mb-5 text-secondary dark:text-slate-300"
+            >
               Undergraduate Student of Teknik Informatika at Universitas Dian
               Nuswantoro
             </p>
@@ -101,8 +134,8 @@
                 >Contact</a
               >
               <a
-                href="https://drive.google.com/uc?export=download&id=1G9qctzbaEG9Zrk8KYadMEkUH24S-KeSP"
-                class="text-base text-primary font-semibold rounded-full bg-white border border-primary py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                href="https://drive.google.com/uc?export=download&id=1Lr1cg3_EQr-wGusRyX7MmxPbOa1KzXC6"
+                class="text-base text-primary font-semibold rounded-full border-2 border-primary py-3 px-8 hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 >Resume</a
               >
             </div>
@@ -121,13 +154,15 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-16 md:pt-36 pb-16">
+    <section id="about" class="pt-16 md:pt-36 pb-16 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap mb-10 md:mb-16">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="font-bold text-primary text-lg">About Me</h4>
 
-            <p class="text-base font-medium text-secondary max-w-xl">
+            <p
+              class="text-base font-medium text-secondary dark:text-slate-300 max-w-xl"
+            >
               Hello! I'm Raafi Nur Adzani, a web developer with experience in
               various technologies such as React.js, Next.js, Express.js, and
               Laravel. I am Undergraduate Student of Teknik Informatika at
@@ -138,8 +173,12 @@
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2 md:mb-10">
-            <h3 class="font-bold text-dark text-2xl mb-4">My Social Media</h3>
-            <p class="font-medium text-base text-secondary mb-6">
+            <h3 class="font-bold text-dark dark:text-white text-2xl mb-4">
+              My Social Media
+            </h3>
+            <p
+              class="font-medium text-base text-secondary dark:text-slate-300 mb-6"
+            >
               Follow my progress on various social media platforms. You can view
               my latest activities and updates through the here.
             </p>
@@ -148,7 +187,7 @@
               <a
                 href="https://github.com/Raafina"
                 target="_blank"
-                class="w-9 h-9 mr-3 border-secondary flex items-center justify-center rounded-full hover:bg-white text-secondary hover:text-primary"
+                class="w-9 h-9 mr-3 border-secondary flex items-center justify-center rounded-full hover:bg-white text-secondary dark:text-slate-300 hover:text-primary"
               >
                 <svg
                   role="img"
@@ -166,7 +205,7 @@
               <a
                 href="https://www.instagram.com/raafi.na/"
                 target="_blank"
-                class="w-9 h-9 mr-3 border-secondary border-2 flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary hover:text-white"
+                class="w-9 h-9 mr-3 border-secondary border-2 flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-slate-300 hover:text-white"
               >
                 <svg
                   role="img"
@@ -185,7 +224,7 @@
               <a
                 href="https://www.linkedin.com/in/raafi-na"
                 target="_blank"
-                class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary hover:text-white"
+                class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-slate-300 hover:text-white"
               >
                 <svg
                   role="img"
@@ -203,7 +242,7 @@
               <!-- Facebook -->
               <a
                 href="https://www.facebook.com/raafi.adzanii"
-                class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary hover:text-white"
+                class="w-9 h-9 mr-3 border-2 border-secondary flex justify-center items-center rounded-full hover:bg-primary hover:border-primary text-secondary dark:text-slate-300 hover:text-white"
               >
                 <svg
                   role="img"
@@ -223,8 +262,12 @@
         </div>
         <div class="flex flex-wrap">
           <div class="md:text-center md:mx-auto md:mb-16 px-4">
-            <h2 class="font-bold text-dark text-2xl mb-4">Technologies</h2>
-            <p class="font-medium text-md text-secondary mb-4 md:mb-8">
+            <h2 class="font-bold text-dark dark:text-white text-2xl mb-4">
+              Technologies
+            </h2>
+            <p
+              class="font-medium text-md text-secondary dark:text-slate-300 mb-4 md:mb-8"
+            >
               These are the technologies and tools that I use in my development
               process.
             </p>
@@ -583,13 +626,18 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-16 md:pt-36 md:pb-16 bg-slate-100">
+    <section
+      id="portofolio"
+      class="pt-16 md:pt-36 md:pb-16 bg-slate-100 dark:bg-slate-800"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-bold text-lg text-primary mb-2">Portofolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">Latest Project</h2>
-            <p class="font-medium text-md text-secondary">
+            <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">
+              Latest Project
+            </h2>
+            <p class="font-medium text-md text-secondary dark:text-slate-300">
               Here are some of the projects that I have built and developed.
               Every project that is done reflects a commitment to continue to
               improve capabilities and provide solutions according to needs.
@@ -613,10 +661,10 @@
                 class="w-full"
               />
             </div>
-            <h3 class="font-bold text-xsl text-dark mt-5 mb-3">
+            <h3 class="font-bold text-xsl text-dark dark:text-white mt-5 mb-3">
               Customer Relationship Management 'LoyalCust'
             </h3>
-            <p class="font-medium text-base text-secondary">
+            <p class="font-medium text-base text-secondary dark:text-slate-300">
               LoyalCust is a web-based CRM platform that focuses on managing
               customer and sales databases to help UMKM. This platform makes it
               easy for businesses to record, store and access customer and
@@ -627,21 +675,21 @@
             >
               <a
                 href="https://github.com/galaxy7891/CRM-Backend"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 BE GitHub
               </a>
               <a
                 href="https://github.com/galaxy7891/CRM-Frontend"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 FE GitHub
               </a>
               <a
                 href="https://loyalcust.vercel.app/"
-                class="px-3 py-2 border bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 Demo
@@ -659,10 +707,10 @@
                 class="w-full"
               />
             </div>
-            <h3 class="font-bold text-xsl text-dark mt-5 mb-3">
+            <h3 class="font-bold text-xsl text-dark dark:text-white mt-5 mb-3">
               Airplane Ticket Booking Website 'TerbangIn'
             </h3>
-            <p class="font-medium text-base text-secondary">
+            <p class="font-medium text-base text-secondary dark:text-slate-300">
               TerbangIn is an airline ticket booking platform that allows users
               to search flight schedules, select seats, and pay for tickets
               online. With accurate price and flight schedule information,
@@ -673,21 +721,21 @@
             >
               <a
                 href="https://github.com/blackjac7/km6-final-terbangin-backend"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 BE GitHub
               </a>
               <a
                 href="https://github.com/blackjac7/km6-final-terbangin-frontend"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 FE GitHub
               </a>
               <a
                 href="https://terbangin.projects.codes/"
-                class="px-3 py-2 border bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 Demo
@@ -705,11 +753,11 @@
                 class="w-full"
               />
             </div>
-            <h3 class="font-bold text-xsl text-dark mt-5 mb-3">
+            <h3 class="font-bold text-xsl text-dark dark:text-white mt-5 mb-3">
               Information System and Student Internship Registration Website for
               KPw Bank Indonesia Provinsi Jawa Tengah
             </h3>
-            <p class="font-medium text-base text-secondary">
+            <p class="font-medium text-base text-secondary dark:text-slate-300">
               This website are designed to simplify the registration process for
               internship students at the Kantor Perwakilan Bank Indonesia
               Provinsi Jawa Tengah. Through this platform, students can access
@@ -721,14 +769,14 @@
             >
               <a
                 href="https://github.com/Raafina/BI-Jateng-Intern-Registration"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 FE GitHub
               </a>
               <a
                 href="https://pendaftaran-magang-bi-jateng.vercel.app/"
-                class="px-3 py-2 border bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 bg-primary text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 Demo
@@ -746,10 +794,10 @@
                 class="w-full"
               />
             </div>
-            <h3 class="font-bold text-xsl text-dark mt-5 mb-3">
+            <h3 class="font-bold text-xsl text-dark dark:text-white mt-5 mb-3">
               Artesian Water Payment Management System 'Sitoya'
             </h3>
-            <p class="font-medium text-base text-secondary">
+            <p class="font-medium text-base text-secondary dark:text-slate-300">
               Sitoya was designed to manage artesian water payments in Desa
               Salam Kerep, Kota Semarang. By using Sitoya, artesian water
               administrators can efficiently record payments, check the payment
@@ -761,7 +809,7 @@
             >
               <a
                 href="https://github.com/Raafina/Sitoya"
-                class="px-3 py-2 border border-dark bg-black text-white rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
+                class="px-3 py-2 border border-dark bg-black dark:bg-white text-white dark:text-black rounded-md text-base hover:opacity-80 hover:shadow-lg transition duration-300 ease-in-out"
                 target="_blank"
               >
                 GitHub
@@ -774,13 +822,15 @@
     <!-- Portofolio Section End -->
 
     <!-- Experience Section Start -->
-    <section id="experience" class="pt-16 md:pt-36 pb-16 md:pb-32">
+    <section id="experience" class="pt-16 md:pt-36 pb-16 md:pb-32 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-bold text-lg text-primary mb-2">Experience</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">Newest Experience</h2>
-            <p class="font-medium text-md text-secondary">
+            <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">
+              Newest Experience
+            </h2>
+            <p class="font-medium text-md text-secondary dark:text-slate-300">
               Gained valuable experience working on innovative projects,
               refining my design and development skills while collaborating with
               talented teams
@@ -791,14 +841,16 @@
         <div class="w-full md:px-24">
           <!-- Campus Digital -->
           <div
-            class="items-center border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5"
+            class="items-center border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5 dark:hover:bg-slate-800"
           >
-            <h1 class="font-bold text-lg md:text-xl">
+            <h1 class="font-bold text-lg md:text-xl text-dark dark:text-white">
               Campus Digital Indonesia
             </h1>
-            <h2 class="italic text-base md:text-lg">Software Developer</h2>
+            <h2 class="italic text-base md:text-md text-dark dark:text-white">
+              Software Developer
+            </h2>
 
-            <div class="h-6 text-secondary flex">
+            <div class="h-6 text-secondary dark:text-slate-300 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -814,14 +866,16 @@
                 />
               </svg>
 
-              <p class="text-secondary ms-2 text-sm self-center">
+              <p
+                class="text-secondary dark:text-slate-300 ms-2 text-sm self-center"
+              >
                 September 2024 - December 2024
               </p>
             </div>
 
             <ul
               style="list-style-type: disc; margin-left: 20px"
-              class="text-slate-600"
+              class="text-slate-600 dark:text-slate-200"
             >
               <li>MBKM Kemdikbud Magang Bersertifikat batch 7th</li>
               <li>
@@ -834,17 +888,24 @@
                 Develop and implement integrations backend systems and third
                 party APIs to enhance functionality and process
               </li>
+              <li>
+                Build and maintain frontend and backend systems by utilizing
+                Redux for state management, ensuring a responsive and
+                user-friendly application experience.
+              </li>
             </ul>
           </div>
           <!-- Bank Indonesia -->
           <div
-            class="border border-slate-300 rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5"
+            class="border border-slate-300 rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5 dark:hover:bg-slate-800"
           >
-            <h1 class="text-lg font-bold md:text-xl">
+            <h1 class="text-lg font-bold md:text-xl text-dark dark:text-white">
               Kantor Perwakilan Bank Indonesia Provinsi Jawa Tengah
             </h1>
-            <h2 class="italic text-base md:text-lg">PR & IT Support</h2>
-            <div class="h-6 text-secondary flex">
+            <h2 class="italic text-base md:text-md text-dark dark:text-white">
+              PR & IT Support
+            </h2>
+            <div class="h-6 text-secondary dark:text-slate-300 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -860,13 +921,15 @@
                 />
               </svg>
 
-              <p class="text-secondary ms-2 text-sm self-center">
+              <p
+                class="text-secondary dark:text-slate-300 ms-2 text-sm self-center"
+              >
                 June 2024 - July 2024
               </p>
             </div>
             <ul
               style="list-style-type: disc; margin-left: 20px"
-              class="text-slate-600"
+              class="text-slate-600 dark:text-slate-200"
             >
               <li>
                 Developed a dedicated internship registration website for the
@@ -881,20 +944,19 @@
                 Representation of Bank Indonesia's Public Relations to corporate
                 and individuals regarding events organised
               </li>
-              <li>
-                Build and maintain frontend and backend systems by utilizing
-                Redux for state management, ensuring a responsive and
-                user-friendly application experience.
-              </li>
             </ul>
           </div>
           <!-- Binar Academy -->
           <div
-            class="border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5"
+            class="border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5 dark:hover:bg-slate-800"
           >
-            <h1 class="font-bold text-lg md:text-xl">Binar Academy</h1>
-            <h2 class="italic text-base md:text-lg">Fullstack Web Developer</h2>
-            <div class="h-6 text-secondary flex">
+            <h1 class="font-bold text-lg md:text-xl text-dark dark:text-white">
+              Binar Academy
+            </h1>
+            <h2 class="italic text-base md:text-md text-dark dark:text-white">
+              Fullstack Web Developer
+            </h2>
+            <div class="h-6 text-secondary dark:text-slate-300 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -910,13 +972,15 @@
                 />
               </svg>
 
-              <p class="text-secondary ms-2 text-sm self-center">
+              <p
+                class="text-secondary dark:text-slate-300 ms-2 text-sm self-center"
+              >
                 February 2024 - June 2024
               </p>
             </div>
             <ul
               style="list-style-type: disc; margin-left: 20px"
-              class="text-slate-600"
+              class="text-slate-600 dark:text-slate-200"
             >
               <li>MBKM Kemdikbud Studi Independen Bersertifikat batch 6th</li>
               <li>
@@ -937,15 +1001,15 @@
           </div>
           <!-- HMTI -->
           <div
-            class="border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5"
+            class="border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5 dark:hover:bg-slate-800"
           >
-            <h1 class="font-bold text-lg md:text-xl">
+            <h1 class="font-bold text-lg md:text-xl text-dark dark:text-white">
               Himpunan Mahasiswa Teknik Informatika Udinus
             </h1>
-            <h2 class="italic text-base md:text-lg">
+            <h2 class="italic text-base md:text-md text-dark dark:text-white">
               Pengurus Bidang Informasi dan Komunikasi
             </h2>
-            <div class="h-6 text-secondary flex">
+            <div class="h-6 text-secondary dark:text-slate-300 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -961,13 +1025,15 @@
                 />
               </svg>
 
-              <p class="text-secondary ms-2 text-sm self-center">
+              <p
+                class="text-secondary dark:text-slate-300 ms-2 text-sm self-center"
+              >
                 April 2022 - May 2024
               </p>
             </div>
             <ul
               style="list-style-type: disc; margin-left: 20px"
-              class="text-slate-600"
+              class="text-slate-600 dark:text-slate-200"
             >
               <li>
                 Lead Content Creator Informatic Media. Coordinated a team of
@@ -999,15 +1065,15 @@
           </div>
           <!-- Duta Anti Narkoba BNN Kota Tegal -->
           <div
-            class="border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5"
+            class="border-slate-300 border rounded-md p-3 md:px-6 md:py-4 shadow-md transform transition duration-300 hover:bg-gray-100 mb-5 dark:hover:bg-slate-800"
           >
-            <h1 class="font-bold text-lg md:text-xl">
+            <h1 class="font-bold text-lg md:text-xl text-dark dark:text-white">
               Badan Narkotika Nasional Kota Tegal
             </h1>
-            <h2 class="italic text-base md:text-lg">
+            <h2 class="italic text-base md:text-md text-dark dark:text-white">
               Duta Anti Narkoba BNN Kota Tegal
             </h2>
-            <div class="h-6 text-secondary flex">
+            <div class="h-6 text-secondary dark:text-slate-300 flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1023,13 +1089,15 @@
                 />
               </svg>
 
-              <p class="text-secondary ms-2 text-sm self-center">
+              <p
+                class="text-secondary dark:text-slate-300 ms-2 text-sm self-center"
+              >
                 October 2019 - June 2024
               </p>
             </div>
             <ul
               style="list-style-type: disc; margin-left: 20px"
-              class="text-slate-600"
+              class="text-slate-600 dark:text-slate-200"
             >
               <li>
                 Supported BNN Kota Tegal in providing educational programs on
@@ -1053,13 +1121,18 @@
     <!-- Experience Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-16 md:pt-36 pb-16 md:pb-32">
+    <section
+      id="contact"
+      class="pt-16 md:pt-36 pb-16 md:pb-32 bg-slate-100 dark:bg-slate-800"
+    >
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-bold text-lg text-primary mb-2">Contact</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4">Contact Me</h2>
-            <p class="font-medium text-md text-secondary">
+            <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">
+              Contact Me
+            </h2>
+            <p class="font-medium text-md text-secondary dark:text-slate-300">
               For questions, suggestions, or criticism, please message me.
             </p>
           </div>
@@ -1075,19 +1148,19 @@
                 id="email"
                 name="email"
                 required
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                class="w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
               />
             </div>
 
             <div class="w-full px-4 mb-6">
-              <label for="message" class="text-base font-bold text-primary"
+              <label for="message" class="text-base font-bold text-primary mb-2"
                 >Message</label
               >
               <textarea
                 id="message"
                 name="message"
                 required
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary h-32"
+                class="w-full bg-white text-dark p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary h-32"
               ></textarea>
             </div>
 
