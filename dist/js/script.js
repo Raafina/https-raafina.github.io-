@@ -35,14 +35,14 @@ window.addEventListener('click', (e) => {
 // dark mode
 const html = document.documentElement;
 
-// Cek localStorage atau preferensi sistem
+// check local storage
 if (
   localStorage.getItem('theme') === 'dark' ||
   (!localStorage.getItem('theme') &&
     window.matchMedia('(prefers-color-scheme: dark)').matches)
 ) {
   html.classList.add('dark');
-  localStorage.setItem('theme', 'dark'); // Default ke dark jika belum diatur
+  localStorage.setItem('theme', 'dark'); // Default to dark
 } else {
   html.classList.remove('dark');
   localStorage.setItem('theme', 'light');
@@ -51,7 +51,6 @@ if (
 document.addEventListener('DOMContentLoaded', () => {
   const darkToggle = document.querySelector('#darkToggle');
 
-  // Atur toggle sesuai dengan tema saat ini
   if (localStorage.getItem('theme') === 'dark') {
     darkToggle.checked = true;
   }
