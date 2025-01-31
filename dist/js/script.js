@@ -33,14 +33,18 @@ window.addEventListener('click', (e) => {
 });
 
 // dark mode
+const html = document.documentElement;
+if (localStorage.getItem('theme') === 'dark') {
+  html.classList.add('dark');
+} else {
+  localStorage.setItem('theme', 'light');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const darkToggle = document.querySelector('#darkToggle');
-  const html = document.documentElement;
 
-  // Cek localStorage
+  // check local storage
   if (localStorage.getItem('theme') === 'dark') {
-    html.classList.add('dark');
     darkToggle.checked = true;
   }
 
