@@ -1396,6 +1396,14 @@ body {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.dark\:hover\:opacity-10:hover:is(.dark *) {
+  opacity: 0.1;
+}
+
+.dark\:hover\:opacity-100:hover:is(.dark *) {
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   .md\:mx-auto {
     margin-left: auto;

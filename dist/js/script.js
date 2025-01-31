@@ -34,16 +34,24 @@ window.addEventListener('click', (e) => {
 
 // dark mode
 const html = document.documentElement;
-if (localStorage.getItem('theme') === 'dark') {
+
+// Cek localStorage atau preferensi sistem
+if (
+  localStorage.getItem('theme') === 'dark' ||
+  (!localStorage.getItem('theme') &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
   html.classList.add('dark');
+  localStorage.setItem('theme', 'dark'); // Default ke dark jika belum diatur
 } else {
+  html.classList.remove('dark');
   localStorage.setItem('theme', 'light');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const darkToggle = document.querySelector('#darkToggle');
 
-  // check local storage
+  // Atur toggle sesuai dengan tema saat ini
   if (localStorage.getItem('theme') === 'dark') {
     darkToggle.checked = true;
   }
