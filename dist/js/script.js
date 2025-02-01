@@ -66,6 +66,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const checkbox = document.getElementById('darkToggle');
+const lightSVG = document.getElementById('lightSVG');
+const darkSVG = document.getElementById('darkSVG');
+const toggleImage = document.getElementById('toggleImage');
+
+// Fungsi untuk mengubah SVG sesuai tema
+checkbox.addEventListener('change', function () {
+  if (this.checked) {
+    // Tampilkan SVG Dark, sembunyikan SVG Light
+    lightSVG.classList.add('hidden');
+    darkSVG.classList.remove('hidden');
+  } else {
+    // Tampilkan SVG Light, sembunyikan SVG Dark
+    darkSVG.classList.add('hidden');
+    lightSVG.classList.remove('hidden');
+  }
+});
+
+// Setel default berdasarkan localStorage
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    checkbox.checked = true;
+    lightSVG.classList.add('hidden');
+    darkSVG.classList.remove('hidden');
+  } else {
+    checkbox.checked = false;
+    darkSVG.classList.add('hidden');
+    lightSVG.classList.remove('hidden');
+  }
+});
+
 // send email
 document
   .getElementById('contactForm')
